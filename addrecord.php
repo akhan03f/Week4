@@ -25,7 +25,7 @@
                 <input type="date" class="form-control" id="dueDate" name="dueDate">
                 <input id="isComplete" name="isComplete" type="hidden" value="false">
             </div>
-                <input  type="submit" class="btn btn-primary" name="submit" value="Add Task">
+                <input  type="submit" class="btn btn-primary" name="submit" value="Add Record">
         </form>
         </div>
     </div> <!-- container -->
