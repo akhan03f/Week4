@@ -10,9 +10,9 @@ if (isset($_POST['submit'])) {
 		$new_user = array(
 			"firstname" => $_POST['firstname'],
 			"lastname"  => $_POST['lastname'],
-			"email"     => $_POST['email'],
-			"age"       => $_POST['age'],
-			"location"  => $_POST['location']
+			"email"     => $_POST[''],
+			"cuisine"       => $_POST['cuisine'],
+			"restaurant"  => $_POST['restaurant']
 		);
 
 	$sql = sprintf(
@@ -42,10 +42,10 @@ include "templates/header.php"; ?><h2>Add a user</h2>
 	<input type="text" name="lastname" id="lastname">
 	<label for="email">Email Address</label>
 	<input type="text" name="email" id="email">
-	<label for="age">Age</label>
-	<input type="text" name="age" id="age">
-	<label for="location">Location</label>
-	<input type="text" name="location" id="location">
+	<label for="cuisine">Cuisine</label>
+	<input type="text" name="cuisine" id="cuisine">
+	<label for="restaurant">Restaurant</label>
+	<input type="text" name="restaurant" id="restaurant">
 	<input type="submit" name="submit" value="Submit">
 </form>
 
