@@ -6,7 +6,7 @@
     
         $id = $_GET['id'];
         
-        $sql = "SELECT isComplete FROM tasks WHERE id = :id";
+        $sql = "SELECT isComplete FROM records WHERE id = :id";
         $statement = $connection->prepare($sql);
         $statement->bindValue(':id', $id);
         $statement->execute();
@@ -20,7 +20,7 @@
             $isComplete = 'false';
         }
 
-        $sql = "UPDATE tasks 
+        $sql = "UPDATE records 
                 SET   
                     isComplete  = :isComplete 
                 WHERE id = :id";
